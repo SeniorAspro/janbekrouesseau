@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    font-family:'Poppins';
+    margin: 0;
+    padding: 0;
+    background-image: url('/photos/beach.jpg');
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: url("spidercatfront.png");
+}
+
+@media (max-width: 768px) {
+    body {
+      background-image: url('photos/flamingo.png');
+    }
+    .countdown-text {
+        padding: 3.5rem 0 0;
+    }
+    .countdown-actual-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 1rem;
+    }
+    .countdown-actual-container {
+        flex-direction: column;
+        justify-content: center center;
+
+    }
+    .countdown-actual-item .big-text{
+        font-weight: bold;
+        font-size: 3.5rem;
+        line-height: 1;
+        margin: 0 2.2rem;
+    }
+    .countdown-actual-item .big-text {
+        background: linear-gradient(to top, rgb(96, 40, 55), black);
+        -webkit-background-clip: text; /* for Safari and Chrome */
+        -webkit-text-fill-color: transparent; /* hides original text color */
+        background-clip: text; /* standard */
+        color: transparent; /* fallback */
+      }
+  }
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem;
+    align-items: center;
+}
+
+.countdown-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 3rem 0 0;
+}
+
+.countdown-actual-container {
+    display: flex;
+}
+
+.countdown-actual-item {
+    justify-items: center;
+}
+
+.countdown-actual-item .big-text{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin: 0 2.2rem;
+}
+
+.important-message {
+    padding: 0.25rem 0.5rem 0.25rem;
+    background-color: rgba(100, 255, 227, 0.245);
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.important-message p {
+    font-family: "Metamorphous", serif;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem 0.3rem;
+    overflow-wrap: break-word;   /* Break long words */
+    word-break: break-word;       /* For some browsers */
+    white-space: normal;          /* Ensure wrapping */
+}
+
+.button {
+    margin: 0 0.4rem 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    float: right;
+    background: none;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 3px rgba(56, 56, 56, 0.5);
+    transition: none;
+}
