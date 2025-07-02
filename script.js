@@ -33,7 +33,7 @@
         years--;
     }    
     
-    days = days + (months * 30);
+    days += months * 30;
 
     document.getElementById('days').innerHTML = `${days}`;
     document.getElementById('hours').innerHTML = `${hours}`;
