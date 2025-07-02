@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 html, body {
     font-family:'Poppins';
     margin: 0;
     padding: 0;
-    background-image: url('photos/beach.jpg');
+    background-image: url('photos/beach.webp');
     background-size: cover;
     background-position: center center; 
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
-    overflow: hidden;
-    cursor: url("spidercatfront.png");
+    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 
 .hero-container {
-    height: 100vh; /* 100% dü */
+    height: 100dvh; /* 100% dü */
     display: flex;
     flex-direction: column;
-    
+
     /* justify-content: space-evenly; yoktu */
     align-items: center;
 }
 
 .countdown-text {
     width: 100%;
-    font-size: clamp(1.4rem, 2.2vw, 2.5rem);
+    font-size: clamp(1.4rem, 2.2vw, 1.8rem);
     text-align: center;
     margin-bottom: 4rem;
     font-weight: 200;
@@ -38,14 +39,15 @@ html, body {
 
 .countdown-actual-item {
     justify-items: center;
+    text-align: center; 
 }
 
 .countdown-actual-item .big-text{
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: clamp(3.5rem, 5vw, 40.5rem);
     line-height: 1;
     margin: 0 2.2rem;
-    background: linear-gradient(to top, rgb(40, 77, 96), black);
+    background: linear-gradient(to top, rgb(28, 87, 114), rgb(0, 14, 26));
     -webkit-background-clip: text; /* for Safari and Chrome */
     -webkit-text-fill-color: transparent; /* hides original text color */
     background-clip: text; /* standard */
@@ -55,24 +57,27 @@ html, body {
 .important-message {
     padding: 0.25rem 0.5rem 0.25rem;
     background-color: rgba(122, 255, 237, 0.12);
-    margin: 0;
+    margin: auto;
     width: 100%;
     box-sizing: border-box;
 }
 
 .important-message p {
-    font-family: "Metamorphous", serif;
-    font-size: 1rem;
+    font-family: "Grenze", serif;
+    font-size: clamp(1.4rem, 2.9vh, 1.9rem);
+    color: rgb(9, 45, 48);
+    opacity: 0.9;
     padding: 0.3rem 0.6rem 0.3rem;
+    text-align: center;
     overflow-wrap: break-word;   /* Break long words */
     word-break: break-word;       /* For some browsers */
     white-space: normal;          /* Ensure wrapping */
 }
 
 .button {
-    margin: 0 0.4rem 0.5rem;
+    margin: -0.1rem 0.4rem 0.5rem;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     float: right;
     background: none;
     border-radius: 1rem;
@@ -84,7 +89,7 @@ html, body {
 
 @media (max-width: 768px) {
     body {
-      background-image: url('photos/flamingo.png');
+      background-image: url('photos/flamingo.webp');
     }
     .countdown-text {
         padding: 3.5rem 0 0;
@@ -103,7 +108,6 @@ html, body {
     }
     .countdown-actual-item .big-text{
         font-weight: bold;
-        font-size: 3.5rem;
         line-height: 1;
         margin: 0 2.2rem;
     }
@@ -113,5 +117,12 @@ html, body {
         -webkit-text-fill-color: transparent; /* hides original text color */
         background-clip: text; /* standard */
         color: transparent; /* fallback */
+    }
+    .important-message {
+        background-color: rgba(100, 240, 240, 0.12);
+        margin: 0;
+    }
+    .button {
+        font-size: 1.1rem;
     }
   }
